@@ -1,0 +1,97 @@
+@use "variables" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: $Family;
+}
+
+body {
+  background-color: $VeryLightGray;
+  padding: 50px 12px;
+}
+//
+// ============================ header section =======================//
+//
+header {
+  width: 90%;
+  height: 161px;
+  margin: auto;
+  color: $VeryDarkBlue;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: $Weightslight;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: $WeightsBold;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.9375rem;
+    font-weight: $WeightsNormal;
+    text-align: center;
+    opacity: 0.5;
+  }
+}
+//
+// ============================ main section ===================//
+//
+
+.card {
+  width: 90%;
+  height: 222px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 1.5625rem;
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.26);
+  border-radius: 0.7rem;
+  padding: 30px 29px;
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: $WeightsBold;
+    color: $VeryDarkBlue;
+  }
+
+  p {
+    font-size: 0.8125rem;
+    font-weight: $WeightsNormal;
+    color: $VeryDarkBlue;
+    opacity: 0.5;
+  }
+
+  &-supervisor {
+    border-top: 3px solid $Cyan;
+    background-image: url(../../images/icon-supervisor.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 30px right 30px;
+  }
+
+  &-team-builder {
+    border-top: 3px solid $Red;
+    background-image: url(../../images/icon-team-builder.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 30px right 30px;
+  }
+
+  &-karma {
+    border-top: 3px solid $Orange;
+    background-image: url(../../images/icon-karma.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 30px right 30px;
+  }
+
+  &-calculator {
+    border-top: 3px solid $Blue;
+    background-image: url(../../images/icon-calculator.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 30px right 30px;
+  }
+}

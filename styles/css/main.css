@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Poppins:wght@200;400;600&family=Spartan:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #fafafa;
+  padding: 50px 12px;
+}
+
+header {
+  width: 90%;
+  height: 161px;
+  margin: auto;
+  color: #4c4e61;
+}
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-align: center;
+}
+header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+header p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.card {
+  width: 90%;
+  height: 222px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 1.5625rem;
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.26);
+  border-radius: 0.7rem;
+  padding: 30px 29px;
+}
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4c4e61;
+}
+.card p {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: #4c4e61;
+  opacity: 0.5;
+}
+.card-supervisor {
+  border-top: 3px solid #45d3d3;
+  background-image: url(../../images/icon-supervisor.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 30px right 30px;
+}
+.card-team-builder {
+  border-top: 3px solid #ea5353;
+  background-image: url(../../images/icon-team-builder.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 30px right 30px;
+}
+.card-karma {
+  border-top: 3px solid #fcaf4a;
+  background-image: url(../../images/icon-karma.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 30px right 30px;
+}
+.card-calculator {
+  border-top: 3px solid #549ef2;
+  background-image: url(../../images/icon-calculator.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 30px right 30px;
+}
+
+@media screen and (max-width: 325px) {
+  header {
+    width: 95%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    padding: 5px;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header {
+    width: 540px;
+    margin: auto;
+  }
+  header h2 {
+    margin: 10px;
+  }
+  header p {
+    font-size: 0.9375rem;
+    padding: 15px 45px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 1110px;
+    height: 530px;
+    margin: auto;
+  }
+  .container h2 {
+    font-size: 1.25rem;
+  }
+  .container .column {
+    width: 350px;
+    height: 530px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .column .card-supervisor {
+    margin-top: 50%;
+  }
+  .container .column .card-calculator {
+    margin-top: 50%;
+  }
+}/*# sourceMappingURL=main.css.map */

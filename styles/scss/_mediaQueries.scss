@@ -1,0 +1,59 @@
+// small phones
+@media screen and (max-width: 325px) {
+  header {
+    width: 95%;
+    height: min-content;
+    padding: 5px;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+
+// large phones
+
+// desktop
+@media screen and (min-width: 1000px) {
+  header {
+    width: 540px;
+    margin: auto;
+
+    h2 {
+      margin: 10px;
+    }
+
+    p {
+      font-size: 0.9375rem;
+      padding: 15px 45px;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 1110px;
+    height: 530px;
+    margin: auto;
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    .column {
+      width: 350px;
+      height: 530px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .card-supervisor {
+        margin-top: 50%;
+      }
+
+      .card-calculator {
+        margin-top: 50%;
+      }
+    }
+  }
+}
